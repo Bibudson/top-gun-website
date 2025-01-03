@@ -1,0 +1,35 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page60863353.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^index$ page60863353.html [NC]
+RewriteRule ^index/$ page60863353.html [NC]
+
+RewriteRule ^ogloszenia$ page60863891.html [NC]
+RewriteRule ^ogloszenia/$ page60863891.html [NC]
+
+RewriteRule ^aktualnoscihtml$ page60898341.html [NC]
+RewriteRule ^aktualnoscihtml/$ page60898341.html [NC]
+
+RewriteRule ^garwolin$ page60864175.html [NC]
+RewriteRule ^garwolin/$ page60864175.html [NC]
+
+RewriteRule ^laksarzew$ page60864317.html [NC]
+RewriteRule ^laksarzew/$ page60864317.html [NC]
+
+RewriteRule ^sobolewhtml$ page60864349.html [NC]
+RewriteRule ^sobolewhtml/$ page60864349.html [NC]
+
+RewriteRule ^galeria$ page60864181.html [NC]
+RewriteRule ^galeria/$ page60864181.html [NC]
+
+RewriteRule ^kontakt$ page60864185.html [NC]
+RewriteRule ^kontakt/$ page60864185.html [NC]
+
+
